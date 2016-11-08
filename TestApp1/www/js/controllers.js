@@ -3,7 +3,7 @@
 
 angular.module('starter.controllers', [])
     .controller('ProductsController', function($scope, $http) {
-        $http({ method: 'GET', url: 'http://172.19.14.128:3000/api/handphonedescs/1' }).success(function (data) {
+        $http({ method: 'GET', url: 'http://172.19.14.128:3000/api/handphonedescs/' }).success(function (data) {
             console.log('hello');
             $scope.products = data;
             // response data
